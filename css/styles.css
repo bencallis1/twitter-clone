@@ -48,6 +48,7 @@ body {
 	border: 1px solid #019ad2;
 	cursor: pointer;
 	border-radius: 4px;
+	
 }
 .button:disabled {
 	color: #777;
@@ -129,14 +130,17 @@ body {
 	}
 		#tweet-controls {
 			text-align: right;
+			display: none;
 		}
 			#tweet-controls div {
 				display: inline-block;
+				
 			}
 			#char-count {
 				font-size: 14px;
 				color: #999;
 				text-shadow: 0 1px 1px rgba(255,255,255,.75);
+
 			}
 
 /* TWEET */
@@ -168,6 +172,7 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		display: none;
 	}
 		.tweet-actions ul {
 			list-style-type: none;
@@ -179,7 +184,9 @@ body {
 				cursor: pointer;
 				margin-right: 2px;
 			}
-
+			.tweet:hover .tweet-actions{
+				display: block;
+			}
 	.icon {
 		color: #2FC2EF;
 		background-color: #2FC2EF;
